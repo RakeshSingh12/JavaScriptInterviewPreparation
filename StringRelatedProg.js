@@ -104,6 +104,23 @@
 //   console.log(findMissingNumber([1, 2, 3, 5]));
 
 //Output--->4
+//////========================== Approach 2::: Find the Missing Number===================================================================================================================
+
+function findMissingNumber(arr){
+  const n = arr.length + 1;
+  const sumOfFirstN = (n * (n + 1)) / 2;
+
+  let sumOfArray = 0;
+  for (let i = 0; i < n - 1; i++) {
+      sumOfArray = sumOfArray + arr[i];
+  }
+
+  let missingNumber = sumOfFirstN - sumOfArray;
+
+  return missingNumber;
+}
+
+console.log("Missing Number:::->", findMissingNumber([1,2,3,5,6,7]))
   //==================What will be the output of the following code?============================================================
   // for (var i = 1; i <= 5; i++) {
   //   setTimeout(function() {
