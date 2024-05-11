@@ -106,7 +106,7 @@
 //Output--->4
 //////========================== Approach 2::: Find the Missing Number===================================================================================================================
 
-function findMissingNumber(arr){
+/* function findMissingNumber(arr){
   const n = arr.length + 1;
   const sumOfFirstN = (n * (n + 1)) / 2;
 
@@ -120,7 +120,7 @@ function findMissingNumber(arr){
   return missingNumber;
 }
 
-console.log("Missing Number:::->", findMissingNumber([1,2,3,5,6,7]))
+console.log("Missing Number:::->", findMissingNumber([1,2,3,5,6,7])) */
   //==================What will be the output of the following code?============================================================
   // for (var i = 1; i <= 5; i++) {
   //   setTimeout(function() {
@@ -134,4 +134,36 @@ console.log("Missing Number:::->", findMissingNumber([1,2,3,5,6,7]))
 // 6
 // 6
 // 6
+//---------------------------------Interview Asked--------------------------------------------------------------------------------------------
+
+/* function x() {
+  for (let i = 1; i <= 5; ++i) {
+    console.log("i Value: ", i); // i value is 1 
+    setTimeout(function () {  //this is async function so throw  callback which will execute later
+      console.log(i);          /// i value is 1 (will execute when callback gets in callstack)
+    }, i * 1000);             ///will execute in this secs once comes in stack (which will be happen at last)
+  }
+}
+
+x(); */
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* let c = {name  : "priya"};
+let d;
+d=c;
+c.name = "supriya";
+console.log(d.name); //supriya */
+//Explaination : Using assignment operator we are accessing the same memory allocation. 
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+/* let a = 3;
+let b = new Number(3);
+console.log(a == b); //true
+console.log(a === b); //false
+console.log(typeof b); //object
+console.log(typeof a); //number */
+//Explaination : === will give false because a will give number but b will give an object.
 
