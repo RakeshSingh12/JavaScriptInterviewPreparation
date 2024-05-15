@@ -166,4 +166,3 @@ console.log(a === b); //false
 console.log(typeof b); //object
 console.log(typeof a); //number */
 //Explaination : === will give false because a will give number but b will give an object.
-
